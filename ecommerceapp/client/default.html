@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="main">
+<head>
+	<meta name=viewport" content="width=device-width, initial-scale=1">
+	<!-- These are the dependancy files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	<body>
+		<!-- This is the Header Section -->
+		<div class="container" id="header">
+			<div class="page-header text-center text-capitalize">
+				<h1>
+					<a href="default.html" style="text-decoration:none"><span class="glyphicon glyphicon-globe"></span> E-Commerce App <span class="glyphicon glyphicon-globe"></span></a>
+				</h1>
+			</div>
+		</div>
+		
+		<!-- This is the Navigation Bar Section -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" style="font-size:150%;">
+							<span class="glyphicon glyphicon-shopping-cart">{{1+2}}
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- This is the Body Section -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div ng-controller="mainController">
+								<button type="submit" ng-click="functionTest()">Whatever</button>
+								<button type="submit" ng-click="getHTML()">HTML</button>
+								<button type="submit" ng-click="nodejs()">HTML</button>
+								<h2>Categories:</h2>
+								    <div>Name:{{details.name}}</div>
+								<p>{{1+2}}</p>
+								{{variable1}}
+								<p>{{categories}}</p>
+<!-- 								<p>Category2</p>
+								<p>Category3</p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h2>Products</h2>
+							<p>Supporting text and website overview letting users know what they can do and find on this website.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script type="text/javascript" src="ShoppingCart/ShoppingCart.js"></script>
+	</body>
+</html>
