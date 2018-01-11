@@ -35,31 +35,36 @@
 		</nav>
 		
 		<!-- This is the Body Section -->
+		<!-- This is the panel on the left side -->
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row" ng-controller="mainController">
 				<div class="col-md-3">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<div ng-controller="mainController">
-								<button type="submit" ng-click="functionTest()">Whatever</button>
-								<button type="submit" ng-click="getHTML()">HTML</button>
-								<button type="submit" ng-click="nodejs()">HTML</button>
-								<h2>Categories:</h2>
-								    <div>Name:{{details.name}}</div>
-								<p>{{1+2}}</p>
-								{{variable1}}
-								<p>{{categories}}</p>
-<!-- 								<p>Category2</p>
-								<p>Category3</p> -->
+							<div>
+								<h1>CATEGORIES:</h1>
+									<div ng-repeat="category in categories">
+										<h2>{{category.name}} <span class="glyphicon glyphicon-ok" ng-click="selectedIndex($index)" ></span></h2>
+									</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+		<!-- This is the panel on the right side -->
 				<div class="col-md-9">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<h2>Products</h2>
-							<p>Supporting text and website overview letting users know what they can do and find on this website.</p>
+							<div"> 
+								<h1>PRODUCTS:</h1>
+									<div ng-repeat="category in categories">
+											<h2><span class="glyphicon glyphicon-film"></span> 
+											{{category.catArray[selected].id}}
+											{{category.catArray[selected].name}}
+											
+										</h2>
+									</div>
+							</div>
 						</div>
 					</div>
 				</div>

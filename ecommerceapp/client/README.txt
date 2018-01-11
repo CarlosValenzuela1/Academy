@@ -10,3 +10,8 @@ https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.
 
 Directory Standard as described on AngularJS Documentation (Directory and File Organization): 
 https://docs.angularjs.org/tutorial/step_04
+
+restlet
+
+http requests
+create a factory

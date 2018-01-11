@@ -1,6 +1,6 @@
 {
-  "/ecommerceapp/:resource/tasks": "/:resource",
-  "/ecommerceapp/:resource/task/:id": "/:resource/:id",
-  "/ecommerceapp/:resource/task/:id/update": "/:resource/:id",
-  "/ecommerceapp/:resource/task/:id/delete": "/:resource/:id"
+  "/ecommerceapp/:resource": "/:resource",
+  "/ecommerceapp/:resource/:id": "/:resource/:id",
+  "/ecommerceapp/:resource/:id/update": "/:resource/:id",
+  "/ecommerceapp/:resource/:id/delete": "/:resource/:id"
 }
